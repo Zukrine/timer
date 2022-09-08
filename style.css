@@ -1,0 +1,184 @@
+:root {
+  --mainColor1: #2987be;
+  --mainColor2: #1059b8;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 60%;
+  height: 100%;
+  margin: 0 auto;
+  margin-top: 150px;
+}
+
+.timer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.timer__block {
+  width: 150px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.results__block {
+  display: flex;
+  /* position: absolute; */
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 400px;
+  height: 150px;
+  max-height: 150px;
+  margin: 0px auto;
+  margin-top: 15px;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.results {
+  width: 300px;
+  height: 140px;
+  max-height: 130px;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+.time {
+  background-color: var(--mainColor1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  height: 150px;
+  font-size: 95px;
+}
+
+.title {
+  background-color: var(--mainColor2);
+  padding: 5px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  text-align: center;
+  color: white;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 800px;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+.button {
+  border: none;
+  border-radius: 10px;
+  font-size: 18px;
+  padding: 10px;
+  width: 180px;
+  height: 80px;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.start,
+.circle,
+.stop,
+.reset__results {
+  color: var(--mainColor1);
+}
+
+.start:hover,
+.circle:hover,
+.stop:hover,
+.reset__results:hover {
+  background-color: var(--mainColor2);
+  color: white;
+}
+
+.start:active,
+.circle:active,
+.stop:active,
+.reset__results:active {
+  background-color: #0a3a78;
+  color: white;
+}
+
+@media screen and (min-width: 300px) and (max-width: 900px) {
+  .container {
+    margin: 0 auto;
+    margin-left: 0px;
+  }
+
+  .timer__block {
+    width: 100px;
+    margin: 5px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+
+  .time {
+    background-color: var(--mainColor1);
+    align-items: center;
+    color: white;
+    height: 120px;
+    width: 105px;
+    font-size: 95px;
+  }
+  
+  .title {
+    background-color: var(--mainColor2);
+    padding: 1px;
+    width: 105px;
+    height: 50px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    text-align: center;
+    color: white;
+  }
+
+  .results__block {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 400px;
+    height: 150px;
+    max-height: 150px;
+    margin: 0px auto;
+    margin-top: 15px;
+    margin-left: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px;
+  }
+
+  .buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 400px;
+    margin: 0 10px;
+    margin-top: 10px;
+  }
+
+  .button {
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    padding: 10px;
+    margin: 0 15px;
+    width: 180px;
+    height: 80px;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+  }
+}
